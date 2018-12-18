@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27EA1170105F4328515BACC1 /* Pods_SamsungCut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBA821B679041579A35BCA2 /* Pods_SamsungCut.framework */; };
 		65A7DD7021B727A200354939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A7DD6F21B727A200354939 /* AppDelegate.swift */; };
-		65A7DD7221B727A200354939 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A7DD7121B727A200354939 /* ViewController.swift */; };
 		65A7DD7521B727A200354939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A7DD7321B727A200354939 /* Main.storyboard */; };
 		65A7DD7821B727A200354939 /* SamsungCut.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65A7DD7621B727A200354939 /* SamsungCut.xcdatamodeld */; };
 		65A7DD7A21B727A500354939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65A7DD7921B727A500354939 /* Assets.xcassets */; };
 		65A7DD7D21B727A500354939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A7DD7B21B727A500354939 /* LaunchScreen.storyboard */; };
+		65A7DD8521B72A2300354939 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A7DD8421B72A2300354939 /* SplashViewController.swift */; };
+		65A7DD8A21B735BA00354939 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A7DD8921B735BA00354939 /* LoginController.swift */; };
+		65B6A81121C95276002C4D75 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B6A81021C95276002C4D75 /* MainViewController.swift */; };
+		65BA758621B774450003EAB1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA758521B774450003EAB1 /* RegisterViewController.swift */; };
+		65BA758821B77D310003EAB1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA758721B77D310003EAB1 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		65A7DD6C21B727A200354939 /* SamsungCut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamsungCut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A7DD6F21B727A200354939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65A7DD7121B727A200354939 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		65A7DD7421B727A200354939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65A7DD7721B727A200354939 /* SamsungCut.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SamsungCut.xcdatamodel; sourceTree = "<group>"; };
 		65A7DD7921B727A500354939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65A7DD7C21B727A500354939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65A7DD7E21B727A500354939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65A7DD8421B72A2300354939 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		65A7DD8921B735BA00354939 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		65B6A81021C95276002C4D75 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		65BA758521B774450003EAB1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		65BA758721B77D310003EAB1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		72A486C2CA7B93CED0738151 /* Pods-SamsungCut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamsungCut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SamsungCut/Pods-SamsungCut.debug.xcconfig"; sourceTree = "<group>"; };
+		DBBA821B679041579A35BCA2 /* Pods_SamsungCut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SamsungCut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F78FE2EB9C52FFA93F8D1948 /* Pods-SamsungCut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamsungCut.release.xcconfig"; path = "Pods/Target Support Files/Pods-SamsungCut/Pods-SamsungCut.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27EA1170105F4328515BACC1 /* Pods_SamsungCut.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				65A7DD6E21B727A200354939 /* SamsungCut */,
 				65A7DD6D21B727A200354939 /* Products */,
+				940EFF751B9638CA5970277F /* Pods */,
+				FB394D37F7F2D6D7DCECB249 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +71,60 @@
 		65A7DD6E21B727A200354939 /* SamsungCut */ = {
 			isa = PBXGroup;
 			children = (
+				65A7DD8821B7356700354939 /* Controller */,
+				65A7DD8721B7356000354939 /* View */,
+				65A7DD8621B7355800354939 /* Model */,
 				65A7DD6F21B727A200354939 /* AppDelegate.swift */,
-				65A7DD7121B727A200354939 /* ViewController.swift */,
-				65A7DD7321B727A200354939 /* Main.storyboard */,
 				65A7DD7921B727A500354939 /* Assets.xcassets */,
 				65A7DD7B21B727A500354939 /* LaunchScreen.storyboard */,
 				65A7DD7E21B727A500354939 /* Info.plist */,
 				65A7DD7621B727A200354939 /* SamsungCut.xcdatamodeld */,
 			);
 			path = SamsungCut;
+			sourceTree = "<group>";
+		};
+		65A7DD8621B7355800354939 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65A7DD8721B7356000354939 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65A7DD7321B727A200354939 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		65A7DD8821B7356700354939 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65A7DD8421B72A2300354939 /* SplashViewController.swift */,
+				65A7DD8921B735BA00354939 /* LoginController.swift */,
+				65BA758521B774450003EAB1 /* RegisterViewController.swift */,
+				65BA758721B77D310003EAB1 /* HomeViewController.swift */,
+				65B6A81021C95276002C4D75 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		940EFF751B9638CA5970277F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72A486C2CA7B93CED0738151 /* Pods-SamsungCut.debug.xcconfig */,
+				F78FE2EB9C52FFA93F8D1948 /* Pods-SamsungCut.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB394D37F7F2D6D7DCECB249 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBBA821B679041579A35BCA2 /* Pods_SamsungCut.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65A7DD8121B727A500354939 /* Build configuration list for PBXNativeTarget "SamsungCut" */;
 			buildPhases = (
+				9DA78069CA2753E9068C7374 /* [CP] Check Pods Manifest.lock */,
 				65A7DD6821B727A200354939 /* Sources */,
 				65A7DD6921B727A200354939 /* Frameworks */,
 				65A7DD6A21B727A200354939 /* Resources */,
+				0B66A89E4BF895E7C4B15A1D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +195,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B66A89E4BF895E7C4B15A1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SamsungCut/Pods-SamsungCut-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SamsungCut/Pods-SamsungCut-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DA78069CA2753E9068C7374 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SamsungCut-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		65A7DD6821B727A200354939 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65A7DD7221B727A200354939 /* ViewController.swift in Sources */,
+				65B6A81121C95276002C4D75 /* MainViewController.swift in Sources */,
 				65A7DD7021B727A200354939 /* AppDelegate.swift in Sources */,
+				65BA758621B774450003EAB1 /* RegisterViewController.swift in Sources */,
+				65A7DD8A21B735BA00354939 /* LoginController.swift in Sources */,
 				65A7DD7821B727A200354939 /* SamsungCut.xcdatamodeld in Sources */,
+				65A7DD8521B72A2300354939 /* SplashViewController.swift in Sources */,
+				65BA758821B77D310003EAB1 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +413,7 @@
 		};
 		65A7DD8221B727A500354939 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72A486C2CA7B93CED0738151 /* Pods-SamsungCut.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,12 +426,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jawahar.SamsungCut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		65A7DD8321B727A500354939 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F78FE2EB9C52FFA93F8D1948 /* Pods-SamsungCut.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,7 +445,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jawahar.SamsungCut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
