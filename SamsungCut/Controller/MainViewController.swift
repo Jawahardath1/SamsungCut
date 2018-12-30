@@ -8,6 +8,7 @@
 
 import UIKit
 import ImageSlideshow
+import SideMenu
 
 class MainViewController: UIViewController {
 
@@ -59,11 +60,59 @@ class MainViewController: UIViewController {
         
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(MainViewController.didTap))
         slideshow.addGestureRecognizer(recognizer)
+        
+        setupSideMenu()
+        setDefaults()
     }
 
     @objc func didTap() {
         let fullScreenController = slideshow.presentFullScreenController(from: self)
         // set the activity indicator for full screen controller (skipping the line will show no activity indicator)
         fullScreenController.slideshow.activityIndicator = DefaultActivityIndicator(style: .white, color: nil)
+    }
+    
+    fileprivate func setupSideMenu() {
+        
+        // define the menus
+        SideMenuManager.default.menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? UISideMenuNavigationController
+//        SideMenuManager.default.menuRightNavigationController = storyboard!.instantiateViewController(withIdentifier: "RightMenuNavigationController") as? UISideMenuNavigationController
+        
+        // enable gestures. the left and/or right menus must be setup above for these to work.
+        // note that these continue to work on the Navigation Controller independent of the View Controllers it displays!
+        print("Jawahar \(self.navigationController!.navigationBar)")
+        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+        
+        // setup a cool background image for demo purposes
+        SideMenuManager.default.menuAnimationBackgroundColor = UIColor(patternImage: UIImage(named: "background")!)
+        
+    }
+    
+    fileprivate func setDefaults() {
+        
+        let modes: [SideMenuManager.MenuPresentMode] = [.menuSlideIn, .viewSlideOut, .menuDissolveIn]
+        
+        let styles: [UIBlurEffect.Style] = [.dark, .light, .extraLight]
+
+    }
+    
+}
+
+extension MainViewController: UISideMenuNavigationControllerDelegate {
+    
+    func sideMenuWillAppear(menu: UISideMenuNavigationController, animated: Bool) {
+        print("SideMenu Appearing! (animated: \(animated))")
+    }
+    
+    func sideMenuDidAppear(menu: UISideMenuNavigationController, animated: Bool) {
+        print("SideMenu Appeared! (animated: \(animated))")
+    }
+    
+    func sideMenuWillDisappear(menu: UISideMenuNavigationController, animated: Bool) {
+        print("SideMenu Disappearing! (animated: \(animated)")
+    }
+    
+    func sideMenuDidDisappear(menu: UISideMenuNavigationController, animated: Bool) {
+        print("SideMenu Disappeared! (animated: \(animated)")
     }
 }

@@ -13,14 +13,14 @@ target 'SamsungCut' do
     pod 'Firebase/Database'
     pod 'SVProgressHUD'
     pod 'ChameleonFramework'
-
     pod 'ImageSlideshow', '~> 1.7'
     pod 'ImageSlideshow/AFURL'
     pod 'ImageSlideshow/Alamofire'
     pod 'ImageSlideshow/SDWebImage'
     pod 'ImageSlideshow/Kingfisher'
-    
     pod 'SideMenu', '~> 5.0'
+    # pod 'BEMCheckBox', '~> 1.4'
+    pod 'DLRadioButton', '~> 1.4'
     
 end
 
