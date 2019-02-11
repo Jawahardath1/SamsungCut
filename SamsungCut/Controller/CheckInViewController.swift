@@ -10,56 +10,60 @@ import UIKit
 import DLRadioButton
 import iOSDropDown
 
-class CheckInViewController: UIViewController {
-
+class CheckInViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var guestName: UITextField!
+    var delegate:MenuItemSelectionDelegate! = nil
+    var menuItem = MenuItem()
     
-    @IBOutlet var customData: [DropDown]!
+    let listItems = [("Hairstylist", "First Available"),
+                     ("Time Estimated", "9.45 AM"),
+                    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let option =  Options()
-        //print("Selected GuestName: \(guestName.text)")
-        
-        print(customData.count)
-        
-        // Custom DropDown Data
-        self.customData[0].optionArray = option.countries
-        self.customData[0].optionIds = option.ids
-        self.customData[0].isSearchEnable = false
-        
-        self.customData[1].optionArray = option.countries
-        self.customData[1].optionIds = option.ids
-        self.customData[1].isSearchEnable = false
-        
-        self.customData[0].didSelect(completion: { (selected, index, id)  in
-//            self.mainDropDown.isSearchEnable = Bool(selected)!
-            print("Selected Collection1 String: \(selected) \n index: \(index) \n Id: \(id)")
-        })
-        
-        self.customData[1].didSelect(completion: { (selected, index, id) in
-            if #available(iOS 11.0, *) {
-                print("Selected Collection2 String: \(selected) \n index: \(index) \n Id: \(id)")
-            } else {
-                // Fallback on earlier versions
-            }
-        })
-        
-        //segment.addTarget(self, action: #selector(CheckInViewController.segmentedDidChange(_:)), for: .valueChanged)
-        
     }
 
-    @objc func segmentedDidChange(_ sender: UISegmentedControl) {
-        let index = sender.selectedSegmentIndex
-//        if index == 0 {
-//            customView.isHidden = true
-//            cstmbutn.isHidden = false
-//        }else{
-//            customView.isHidden = false
-//
-//        }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let(title, titleValue) = listItems[indexPath.row]
+        cell.textLabel?.text = title
+        cell.detailTextLabel?.text = titleValue
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return nil
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "showDetail", sender: self)
+    }
+    
+    func didSelectMenuItem(controller: UITableViewController, menuItem: MenuItem) {
+        
+        self.menuItem = menuItem
+        navigationItem.title = menuItem.name
+        if controller.navigationController?.popViewController(animated: true) == nil {return}
+        
+        print(navigationItem.title as Any)
+        //selectedOption.text = navigationItem.title
         
     }
     
@@ -73,6 +77,5 @@ class CheckInViewController: UIViewController {
             print(String(format: "%@ is selected.", sender.selected()!.titleLabel!.text!))
         }
     }
-    
     
 }

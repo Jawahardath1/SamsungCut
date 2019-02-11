@@ -21,6 +21,8 @@ target 'SamsungCut' do
     pod 'SideMenu', '~> 5.0'
     # pod 'BEMCheckBox', '~> 1.4'
     pod 'DLRadioButton', '~> 1.4'
+    # pod 'BTNavigationDropdownMenu', '~> 0.5'
+    # pod 'iOSDropDown', '~> 0.2'
     
 end
 

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2603CA2322038BAE0009E1BF /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2603CA2222038BAE0009E1BF /* Options.swift */; };
+		26C3025F2208D011007800A2 /* MenuItemSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3025E2208D011007800A2 /* MenuItemSelectionDelegate.swift */; };
+		26C302612208D03E007800A2 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C302602208D03E007800A2 /* MenuItem.swift */; };
+		26C302632208F857007800A2 /* CheckInDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C302622208F857007800A2 /* CheckInDetailViewController.swift */; };
+		26C302652208F953007800A2 /* MenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C302642208F953007800A2 /* MenuItems.swift */; };
 		27EA1170105F4328515BACC1 /* Pods_SamsungCut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBA821B679041579A35BCA2 /* Pods_SamsungCut.framework */; };
 		655A875121D43D2200C706C6 /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655A875021D43D2200C706C6 /* CheckInViewController.swift */; };
 		65A7DD7021B727A200354939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A7DD6F21B727A200354939 /* AppDelegate.swift */; };
@@ -18,12 +23,16 @@
 		65A7DD8A21B735BA00354939 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A7DD8921B735BA00354939 /* LoginController.swift */; };
 		65B6A81121C95276002C4D75 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B6A81021C95276002C4D75 /* MainViewController.swift */; };
 		65BA758621B774450003EAB1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA758521B774450003EAB1 /* RegisterViewController.swift */; };
-		65BA758821B77D310003EAB1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA758721B77D310003EAB1 /* HomeViewController.swift */; };
 		65C65D6321CA9FDC001D2E12 /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C65D6221CA9FDC001D2E12 /* PresentedViewController.swift */; };
 		65D5638321C9A1E200DB1DCF /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D5638221C9A1E200DB1DCF /* SideMenuTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2603CA2222038BAE0009E1BF /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		26C3025E2208D011007800A2 /* MenuItemSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemSelectionDelegate.swift; sourceTree = "<group>"; };
+		26C302602208D03E007800A2 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		26C302622208F857007800A2 /* CheckInDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInDetailViewController.swift; sourceTree = "<group>"; };
+		26C302642208F953007800A2 /* MenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItems.swift; sourceTree = "<group>"; };
 		655A875021D43D2200C706C6 /* CheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
 		65A7DD6C21B727A200354939 /* SamsungCut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamsungCut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A7DD6F21B727A200354939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,7 +45,6 @@
 		65A7DD8921B735BA00354939 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		65B6A81021C95276002C4D75 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		65BA758521B774450003EAB1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		65BA758721B77D310003EAB1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		65C65D6221CA9FDC001D2E12 /* PresentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
 		65D5638221C9A1E200DB1DCF /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		72A486C2CA7B93CED0738151 /* Pods-SamsungCut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamsungCut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SamsungCut/Pods-SamsungCut.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,7 +90,6 @@
 				65A7DD8621B7355800354939 /* Model */,
 				65A7DD6F21B727A200354939 /* AppDelegate.swift */,
 				65A7DD7921B727A500354939 /* Assets.xcassets */,
-				65A7DD7B21B727A500354939 /* LaunchScreen.storyboard */,
 				65A7DD7E21B727A500354939 /* Info.plist */,
 				65A7DD7621B727A200354939 /* SamsungCut.xcdatamodeld */,
 			);
@@ -92,6 +99,10 @@
 		65A7DD8621B7355800354939 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2603CA2222038BAE0009E1BF /* Options.swift */,
+				26C3025E2208D011007800A2 /* MenuItemSelectionDelegate.swift */,
+				26C302602208D03E007800A2 /* MenuItem.swift */,
+				26C302642208F953007800A2 /* MenuItems.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				65A7DD7321B727A200354939 /* Main.storyboard */,
+				65A7DD7B21B727A500354939 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -110,11 +122,11 @@
 				65A7DD8421B72A2300354939 /* SplashViewController.swift */,
 				65A7DD8921B735BA00354939 /* LoginController.swift */,
 				65BA758521B774450003EAB1 /* RegisterViewController.swift */,
-				65BA758721B77D310003EAB1 /* HomeViewController.swift */,
 				65B6A81021C95276002C4D75 /* MainViewController.swift */,
 				65D5638221C9A1E200DB1DCF /* SideMenuTableViewController.swift */,
 				65C65D6221CA9FDC001D2E12 /* PresentedViewController.swift */,
 				655A875021D43D2200C706C6 /* CheckInViewController.swift */,
+				26C302622208F857007800A2 /* CheckInDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -211,7 +223,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SamsungCut/Pods-SamsungCut-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-SamsungCut/Pods-SamsungCut-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
@@ -246,7 +258,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SamsungCut/Pods-SamsungCut-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SamsungCut/Pods-SamsungCut-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9DA78069CA2753E9068C7374 /* [CP] Check Pods Manifest.lock */ = {
@@ -275,14 +287,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				65B6A81121C95276002C4D75 /* MainViewController.swift in Sources */,
+				26C302632208F857007800A2 /* CheckInDetailViewController.swift in Sources */,
 				65A7DD7021B727A200354939 /* AppDelegate.swift in Sources */,
 				65BA758621B774450003EAB1 /* RegisterViewController.swift in Sources */,
+				2603CA2322038BAE0009E1BF /* Options.swift in Sources */,
+				26C3025F2208D011007800A2 /* MenuItemSelectionDelegate.swift in Sources */,
 				65A7DD8A21B735BA00354939 /* LoginController.swift in Sources */,
 				655A875121D43D2200C706C6 /* CheckInViewController.swift in Sources */,
 				65A7DD7821B727A200354939 /* SamsungCut.xcdatamodeld in Sources */,
 				65C65D6321CA9FDC001D2E12 /* PresentedViewController.swift in Sources */,
+				26C302612208D03E007800A2 /* MenuItem.swift in Sources */,
+				26C302652208F953007800A2 /* MenuItems.swift in Sources */,
 				65A7DD8521B72A2300354939 /* SplashViewController.swift in Sources */,
-				65BA758821B77D310003EAB1 /* HomeViewController.swift in Sources */,
 				65D5638321C9A1E200DB1DCF /* SideMenuTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
